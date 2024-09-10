@@ -1,0 +1,126 @@
+.resume {
+    height: 100%;
+    min-height: 100vh;
+    background: var(--bg-color-sec);
+    
+   /* direction: ltr; /*Force LTR direction */
+    /*text-align: left; /* Align text to the left */
+}
+
+.resume h1 {
+    padding-bottom: 25px;
+    line-height: 1;
+    color: var(--h1-color);
+    border-bottom: 2px solid var(--border-color);
+
+    text-align: left; /*Ensure title is left-aligned */
+}
+
+.resume section {
+    margin: 30px 0;
+
+    /* direction: ltr; /*Force LTR direction */
+    /* text-align: left; /*Ensure title is left-aligned */
+}
+
+
+
+
+
+
+.education ul,
+.languages ul {
+    /* border-left: 1px solid #47a3da; */
+
+    /* border-left: 1px solid #47a3da;  */
+    /* padding-left: 20px; /* Adds space between the line and the text */
+}
+
+.education ul li,
+.languages ul li {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+    position: relative;
+
+    /* text-align: left; Ensure text aligns left */
+}
+
+.education ul li::after,
+.languages ul li::after {
+    content: '';
+    display: block;
+    position: absolute;
+
+    top: 11px;
+    left: -5px;
+    /* left: -12px; */
+    width: 9px;
+
+    height: 9px;
+    border-radius: 50%;
+    background: #47a3da;
+}
+
+.education ul li span,
+.languages ul li span {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: var(--span-color);
+
+    /* direction: ltr; /* Ensure numbers in LTR 
+    text-align: left; Text aligns left */
+}
+
+
+.education ul li strong,
+.languages ul li strong {
+    margin-top: 8px;
+    font-size: 17px;
+    color: var(--strong-color);
+
+    /* direction: ltr; /* Ensure strong text aligns left 
+    text-align: left; */
+}
+
+.education ul li p,
+.languages ul li p {
+    margin-top: 10px;
+    line-height: 30px;
+    color: var(--p-color);
+
+    /* direction: ltr; /* Ensure normal paragraph text direction 
+    text-align: left; */
+}
+
+
+
+
+
+/* @media screen and (max-width:767px) {} */
+
+@media screen and (min-width:768px) {
+    .resume {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:993px) {
+    .resume {
+        width: 100%;
+    }
+
+    .secs {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .secs section {
+        width: 45%;
+        margin-top: 60px;
+    }
+}
+
+/* @media screen and (min-width:1201px) {} */
